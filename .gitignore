@@ -120,6 +120,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
+messagemenus/.env
 slashcommand/.env
 hellobolt/.env
 eventsapi/.env

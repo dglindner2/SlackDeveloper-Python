@@ -71,6 +71,19 @@ From your app page, select **Interactivity & Shortcuts.**
 
 Turn on Interactivity and add the Request URL from ngrok.
 
+Run the *'slashcommands/app.py'* script.
+
+### Exercise 4. Message Menus
+
+Select **Interactivity & Shortcuts**. 
+
+Copy/Paste Request URL under Interactivity to the **Options Load URL** box under **Select Menus**
+
+Save changes.
+
+Run the script *'messagemenus.py'*. Keep in mind that you must do this in a channel the app belongs to or in a DM with the application.
+
+
 
 
 
