@@ -73,6 +73,8 @@ Turn on Interactivity and add the Request URL from ngrok.
 
 Run the *'slashcommands/app.py'* script.
 
+In a channel in the workspace type: `/survey-dgl lunch`.
+
 ### Exercise 4. Message Menus
 
 Select **Interactivity & Shortcuts**. 
@@ -81,7 +83,26 @@ Copy/Paste Request URL under Interactivity to the **Options Load URL** box under
 
 Save changes.
 
-Run the script *'messagemenus.py'*. Keep in mind that you must do this in a channel the app belongs to or in a DM with the application.
+Run the script *'messagemenus.py'*. 
+
+Keep in mind that you must do this in a channel the app belongs to or in a DM with the application or this will not work.
+
+### Exercise 5. Custom Unfurls
+
+Go to **OAuth & Permissions** page and add `links:read` and `links:write` under **Bot Token Scopes**.
+
+Go to **Event Subscriptions**. 
+
+Under **Subscribe to Bot Events**, subscribe to the `link_shared` event.
+
+In the **App Unfurl Domains** section select **Add Domain.**
+
+Enter the example domain, 'xyz.example.com', and press **Done**.
+
+Press **Save Changes** and then reinstall your application.
+
+Post `https://xyz.example.com` in a DM to the App. You should see an unfurled URL returned.
+
 
 
 
