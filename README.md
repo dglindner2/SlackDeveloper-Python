@@ -83,7 +83,7 @@ Copy/Paste Request URL under Interactivity to the **Options Load URL** box under
 
 Save changes.
 
-Run the script *'messagemenus.py'*. 
+Run the script *'messagemenus/app.py'*. 
 
 Keep in mind that you must do this in a channel the app belongs to or in a DM with the application or this will not work.
 
@@ -101,7 +101,35 @@ Enter the example domain, 'xyz.example.com', and press **Done**.
 
 Press **Save Changes** and then reinstall your application.
 
+Run the script *'customunfurls/app.py'*.
+
 Post `https://xyz.example.com` in a DM to the App. You should see an unfurled URL returned.
+
+### Exercise 6. Message Shortcuts
+
+Message Shortcuts allow users to invoke your app from Slack messages by selecting the … button. Message shortcuts allow you to take action on a specific message. This is different from slash commands, which are only aware of the channel that the slash command was issued in.
+
+This unlocks being able to do things like set custom reminders, open tickets from messages, and more. You can also consider use cases where the context of a specific message would be useful for things like creating a ticket in a helpdesk (like Zendesk) or bug tracking software (like JIRA).
+
+Go to app's **Interactivity & Shortcuts** page.
+
+In the **Shortcuts** section, click on **Create a Shortcut**, select the button for customizing **message shortcuts**, and enter the following information:
+
+1. **Action Name**: 'Remember This!'
+2. **Short Description:** 'An easy way to save interesting posts for later reference'
+3. **Callback ID:** 'save4later-dgl'
+
+Click on **Create**.
+
+Click on **Save Changes**.
+
+Run the script *'messageshortcuts/app.py'*. 
+
+Post a message in any channel. Click on message shortcuts and choose the shortcut you just built. 
+
+You should receive a DM from the app with the messaged you wanted to save. 
+
+
 
 
 
