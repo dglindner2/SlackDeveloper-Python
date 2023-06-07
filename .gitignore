@@ -120,6 +120,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
+interactivity/.env
 messageshortcuts/.env
 customunfurls/.env
 messagemenus/.env

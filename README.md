@@ -129,6 +129,21 @@ Post a message in any channel. Click on message shortcuts and choose the shortcu
 
 You should receive a DM from the app with the messaged you wanted to save. 
 
+### Exercise 7. Interactivity
+
+With the user token your app can impersonate another user to send a message as them on their behalf. Posting on behalf of someone else has many useful applications like, for example, the app could have a flow to work with the CEO and their executive assistant during install so the EA could actually use the app to post an announcement on behalf of the CEO.
+
+Go to **OAuth & Permissions**.
+
+Add the `channels.read` and `chat.write` User Token Scopes.
+
+Add your **User OAuth Token** to your .env file.
+
+Create a new slack channel called "Birthdays" and copy the channel ID.
+
+
+
+
 
 
 
